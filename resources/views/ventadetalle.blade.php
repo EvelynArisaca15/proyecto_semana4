@@ -21,7 +21,7 @@
         <tr><td>{{$value->idcompra}}</td>
             <td>{{$value->serie}}</td>
             <td>{{$value->num_corre}}</td>
-            <td>{{$value->fec_rec}}</td>
+            <td>{{$value->fec_emi}}</td>
             <td>{{$value->igv_total}}</td>
             <td>{{$value->sub_total}}</td>
             <td>{{$value->total}}</td>
