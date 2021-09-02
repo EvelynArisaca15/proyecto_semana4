@@ -9,21 +9,21 @@
 <body>
 <h1>{{$sms2}}</h1>
 <table>
-<td>Codigo</td>
-        <td>Serie</td>
-        <td>Dato</td>
-        <td>Fecha</td>
-        <td>Igv</td>
-        <td>Sub-Total</td>
+        <td>Cod </td>
+        <td>Cod compra</td>
+        <td>Cod Producto</td>
+        <td>Descripcion</td>
+        <td>Precio</td>
+        <td>Cantidad</td>
         <td>Total</td>
         
         @foreach($mensaje3 as $value)
-        <tr><td>{{$value->idcompra}}</td>
-            <td>{{$value->serie}}</td>
-            <td>{{$value->num_corre}}</td>
-            <td>{{$value->fec_rec}}</td>
-            <td>{{$value->igv_total}}</td>
-            <td>{{$value->sub_total}}</td>
+        <tr><td>{{$value->idccompradetalle}}</td>
+            <td>{{$value->idcompra}}</td>
+            <td>{{$value->idproducto}}</td>
+            <td>{{$value->descripcion}}</td>
+            <td>{{$value->precio}}</td>
+            <td>{{$value->cantidad}}</td>
             <td>{{$value->total}}</td>
             <tr>
             @endforeach

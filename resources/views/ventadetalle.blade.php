@@ -10,20 +10,21 @@
 <h1>{{$sms7}}</h1>
 <table>
 <td>Codigo</td>
-        <td>Serie</td>
-        <td>Dato</td>
-        <td>Fecha</td>
-        <td>Igv</td>
-        <td>Sub-Total</td>
+        <td>Codigo</td>
+        <td>Codigo ven</td>
+        <td>codigo pro</td>
+        <td>Descripcion</td>
+        <td>Precio</td>
+        <td>Cantidad</td>
         <td>Total</td>
         
         @foreach($mensaje8 as $value)
-        <tr><td>{{$value->idcompra}}</td>
-            <td>{{$value->serie}}</td>
-            <td>{{$value->num_corre}}</td>
-            <td>{{$value->fec_emi}}</td>
-            <td>{{$value->igv_total}}</td>
-            <td>{{$value->sub_total}}</td>
+        <tr><td>{{$value->idventadetalle}}</td>
+            <td>{{$value->idventa}}</td>
+            <td>{{$value->idproducto}}</td>
+            <td>{{$value->descripcion}}</td>
+            <td>{{$value->precio}}</td>
+            <td>{{$value->can}}</td>
             <td>{{$value->total}}</td>
             <tr>
             @endforeach
